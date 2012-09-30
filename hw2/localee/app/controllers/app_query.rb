@@ -134,7 +134,7 @@ class AppQuery
       l_hash[:name] = l.name
       l_hash[:latitude] = l.latitude
       l_hash[:longitude] = l.longitude
-      l_hash[:follows] = User.find(user_id)
+      l_hash[:follows] = l.users.exists?(user_id)
       @locations << l_hash
     
     end
@@ -156,7 +156,7 @@ class AppQuery
   # Assign: None
   # Output: true if the creation is successful, false otherwise
   def create_location(location_hash={})
-    false
+    return Location.create(location_hash).id.nil?    
   end
 
   # Purpose: The current user follows a location
@@ -169,6 +169,11 @@ class AppQuery
   #       we may call it multiple times to test your schema/models.
   #       Your schema/models/code should prevent corruption of the database.
   def follow_location(user_id, location_id)
+    u = User.find(user_id)
+    l = Location.find(location_id)
+    if u.locations.exists?(location_id)
+      u.locations << l
+    end        
   end
 
   # Purpose: The current user unfollows a location
@@ -181,6 +186,11 @@ class AppQuery
   #       we may call it multiple times to test your schema/models.
   #       Your schema/models/code should prevent corruption of the database.
   def unfollow_location(user_id, location_id)
+    u = User.find(user_id)
+    l = Location.find(location_id)
+    if u.locations.exists?(location_id)
+      u.locations.delete(l)
+    end
   end
 
   # Purpose: The current user creates a post to a given location
@@ -196,7 +206,10 @@ class AppQuery
   # Assign: None
   # Output: true if the creation is successful, false otherwise
   def create_post(user_id, post_hash={})
-    false
+    p = Post.create(post_hash)
+    User.find(user_id).posts << p
+    Location.find(post_hash[:location_id].posts << p
+    return true    
   end
 
   # Purpose: Create a new user
@@ -236,6 +249,15 @@ class AppQuery
   # Output: None
   def get_all_posts
     @posts = []
+    Post.all.each do |post|
+      p_hash = {}
+      p_hash[:author_id] = post.user.id
+      p_hash[:author] = post.user.name
+      p_hash[:text] = post.text
+      p_hash[:created_at] = post.created_at
+      p_hash[:location] = post.location
+      @posts << p_hash
+    end
   end
 
   # Purpose: Get all the users
@@ -249,7 +271,7 @@ class AppQuery
   #     * :email - email of th user
   # Output: None
   def get_all_users
-    @users = []
+    @users = User.all
   end
 
   # Purpose: Get all the locations
@@ -264,7 +286,7 @@ class AppQuery
   #     * :longitude - the longitude
   # Output: None
   def get_all_locations
-    @locations = []
+    @locations = Location.all
   end
 
   # Retrieve the top 5 users who created the most posts.

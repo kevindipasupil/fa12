@@ -429,3 +429,4 @@ Processing by AppController#dashboard as HTML
   Rendered application/_header.html.haml (2.1ms)
 Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.1ms)
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
