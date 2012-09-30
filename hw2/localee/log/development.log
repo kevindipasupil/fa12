@@ -1,0 +1,431 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-29 11:22:02 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (3.6ms)
+  Rendered application/_header_guest.html.haml (15.1ms)
+  Rendered application/_header.html.haml (19.1ms)
+Completed 200 OK in 287ms (Views: 286.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-09-29 11:22:03 -0700
+Compiled app.css  (88ms)  (pid 8316)
+Compiled bootstrap-responsive.css  (0ms)  (pid 8316)
+Compiled bootstrap.css  (77ms)  (pid 8316)
+Compiled home.css  (1ms)  (pid 8316)
+Compiled sessions.css  (1ms)  (pid 8316)
+Compiled users.css  (1ms)  (pid 8316)
+Compiled application.css  (283ms)  (pid 8316)
+Served asset /application.css - 200 OK (315ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-09-29 11:22:03 -0700
+Compiled jquery.js  (23ms)  (pid 8316)
+Compiled jquery_ujs.js  (0ms)  (pid 8316)
+Compiled app.js  (934ms)  (pid 8316)
+Compiled bootstrap.js  (1ms)  (pid 8316)
+Compiled home.js  (486ms)  (pid 8316)
+Compiled locations.js  (576ms)  (pid 8316)
+Compiled sessions.js  (252ms)  (pid 8316)
+Compiled users.js  (250ms)  (pid 8316)
+Compiled application.js  (2805ms)  (pid 8316)
+Served asset /application.js - 200 OK (2832ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-09-29 11:22:12 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (905.6ms)
+  Rendered application/_header_guest.html.haml (1.9ms)
+  Rendered application/_header.html.haml (3.2ms)
+Completed 200 OK in 927ms (Views: 921.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-09-29 11:22:13 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-29 11:22:26 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.8ms)
+  Rendered application/_header_guest.html.haml (1.6ms)
+  Rendered application/_header.html.haml (14.1ms)
+Completed 200 OK in 33ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-09-29 11:22:26 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-09-29 11:22:29 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (8.8ms)
+  Rendered application/_header_guest.html.haml (2.2ms)
+  Rendered application/_header.html.haml (4.3ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-09-29 11:22:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-09-29 11:22:29 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2012-09-29 11:22:50 -0700
+Processing by AppController#reports_index as HTML
+  [1m[36m (0.9ms)[0m  [1mSELECT '' AS name, 0 AS num_posts FROM users WHERE 1=2[0m
+  [1m[35m (0.1ms)[0m  SELECT '' AS name, 0 AS num_users FROM users WHERE 1=2
+  [1m[36m (0.1ms)[0m  [1mSELECT '' AS name, 0 AS num_locations FROM users WHERE 1=2[0m
+  Rendered reports/index.html.haml within layouts/application (13.1ms)
+  Rendered application/_header_guest.html.haml (1.3ms)
+  Rendered application/_header.html.haml (2.8ms)
+Completed 200 OK in 52ms (Views: 25.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-09-29 11:22:50 -0700
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-09-29 11:22:50 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-09-29 11:23:03 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (22.1ms)
+  Rendered application/_header_guest.html.haml (2.2ms)
+  Rendered application/_header.html.haml (4.2ms)
+Completed 200 OK in 44ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-09-29 11:23:04 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-09-29 11:23:04 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-29 11:23:27 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IKiNj602oYSCACXdvcdGGAT5FWL5jL1XIvbJ1nwSCmU=", "user"=>{"name"=>"Kevin Di Pasupil", "email"=>"kdipasupil@berkeley.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'kdipasupil@berkeley.edu' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (40.3ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 29 Sep 2012 18:23:27 UTC +00:00], ["email", "kdipasupil@berkeley.edu"], ["name", "Kevin Di Pasupil"], ["password_digest", "$2a$10$bvGFuIFUJdsjA1zKe.vt6utiE9Ms00TtqzrJhO34P2kLX1iezNgXy"], ["updated_at", Sat, 29 Sep 2012 18:23:27 UTC +00:00]]
+  [1m[36m (94.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 462ms (ActiveRecord: 135.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-29 11:23:27 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 16ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2012-09-29 11:23:27 -0700
+Processing by AppController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/dashboard.html.haml within layouts/application (13.0ms)
+  Rendered application/_header_user.html.haml (11.1ms)
+  Rendered application/_header.html.haml (13.4ms)
+Completed 200 OK in 65ms (Views: 46.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-09-29 11:23:28 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-09-29 11:23:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-29 11:23:34 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2012-09-29 11:23:34 -0700
+Processing by AppController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/dashboard.html.haml within layouts/application (0.3ms)
+  Rendered application/_header_user.html.haml (3.5ms)
+  Rendered application/_header.html.haml (4.9ms)
+Completed 200 OK in 19ms (Views: 13.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-09-29 11:23:34 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-09-29 11:23:34 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-09-29 11:23:37 -0700
+Processing by AppController#locations_index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered locations/index.html.haml within layouts/application (78.5ms)
+  Rendered application/_header_user.html.haml (2.3ms)
+  Rendered application/_header.html.haml (4.2ms)
+Completed 200 OK in 101ms (Views: 92.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-09-29 11:23:37 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-09-29 11:23:37 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started POST "/nearby_locations" for 127.0.0.1 at 2012-09-29 11:23:38 -0700
+Processing by AppController#nearby_locations_index as */*
+  Parameters: {"nelat"=>"37.889133072107185", "nelng"=>"-122.23341779345702", "swlat"=>"37.86203303546808", "swlng"=>"-122.28491620654296"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/nearby_locations" for 127.0.0.1 at 2012-09-29 11:23:44 -0700
+Processing by AppController#nearby_locations_index as */*
+  Parameters: {"nelat"=>"37.89726113888321", "nelng"=>"-122.2100718461914", "swlat"=>"37.843057078420586", "swlng"=>"-122.31306867236327"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/nearby_locations" for 127.0.0.1 at 2012-09-29 11:23:44 -0700
+Processing by AppController#nearby_locations_index as */*
+  Parameters: {"nelat"=>"37.91351458003558", "nelng"=>"-122.16337995166015", "swlat"=>"37.805090513930196", "swlng"=>"-122.3693736040039"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2012-09-29 11:23:51 -0700
+Processing by AppController#reports_index as HTML
+  [1m[35m (0.3ms)[0m  SELECT '' AS name, 0 AS num_posts FROM users WHERE 1=2
+  [1m[36m (5.3ms)[0m  [1mSELECT '' AS name, 0 AS num_users FROM users WHERE 1=2[0m
+  [1m[35m (0.2ms)[0m  SELECT '' AS name, 0 AS num_locations FROM users WHERE 1=2
+  Rendered reports/index.html.haml within layouts/application (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header_user.html.haml (6.8ms)
+  Rendered application/_header.html.haml (14.7ms)
+Completed 200 OK in 49ms (Views: 40.9ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-09-29 11:23:51 -0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-09-29 11:23:51 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120905195452)
+Migrating to CreateLocations (20120929215215)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "coord" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120929215215')[0m
+  [1m[35m (49.9ms)[0m  commit transaction
+Migrating to CreatePosts (20120929220526)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "location_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120929220526')[0m
+  [1m[35m (44.9ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("locations")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("posts")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/reports" for 127.0.0.1 at 2012-09-29 15:30:53 -0700
+Processing by AppController#reports_index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT '' AS name, 0 AS num_posts FROM users WHERE 1=2[0m
+  [1m[35m (0.1ms)[0m  SELECT '' AS name, 0 AS num_users FROM users WHERE 1=2
+  [1m[36m (0.0ms)[0m  [1mSELECT '' AS name, 0 AS num_locations FROM users WHERE 1=2[0m
+  Rendered reports/index.html.haml within layouts/application (5.6ms)
+  [1m[35mUser Load (25.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered application/_header_user.html.haml (4.6ms)
+  Rendered application/_header.html.haml (237.9ms)
+Completed 200 OK in 371ms (Views: 318.6ms | ActiveRecord: 35.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-09-29 15:30:54 -0700
+Served asset /application.css - 200 OK (207ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-09-29 15:30:54 -0700
+Served asset /application.js - 200 OK (347ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-29 15:30:57 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2012-09-29 15:30:57 -0700
+Processing by AppController#dashboard as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/dashboard.html.haml within layouts/application (1.2ms)
+  Rendered application/_header_user.html.haml (1.3ms)
+  Rendered application/_header.html.haml (2.1ms)
+Completed 200 OK in 31ms (Views: 26.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-09-29 15:31:01 -0700
+Processing by AppController#locations_index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered locations/index.html.haml within layouts/application (494.2ms)
+  Rendered application/_header_user.html.haml (1.3ms)
+  Rendered application/_header.html.haml (2.0ms)
+Completed 200 OK in 539ms (Views: 535.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/nearby_locations" for 127.0.0.1 at 2012-09-29 15:31:03 -0700
+Processing by AppController#nearby_locations_index as */*
+  Parameters: {"nelat"=>"37.889133072107185", "nelng"=>"-122.23341779345702", "swlat"=>"37.86203303546808", "swlng"=>"-122.28491620654296"}
+  [1m[35mUser Load (3.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/nearby_locations" for 127.0.0.1 at 2012-09-29 15:31:14 -0700
+Processing by AppController#nearby_locations_index as */*
+  Parameters: {"nelat"=>"37.8814105774703", "nelng"=>"-122.24878148669433", "swlat"=>"37.85430769956437", "swlng"=>"-122.30027989978026"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/nearby_locations" for 127.0.0.1 at 2012-09-29 15:31:15 -0700
+Processing by AppController#nearby_locations_index as */*
+  Parameters: {"nelat"=>"37.88161381138889", "nelng"=>"-122.24912480944823", "swlat"=>"37.85451100825065", "swlng"=>"-122.30062322253417"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/nearby_locations" for 127.0.0.1 at 2012-09-29 15:31:16 -0700
+Processing by AppController#nearby_locations_index as */*
+  Parameters: {"nelat"=>"37.89197799755924", "nelng"=>"-122.24243001574706", "swlat"=>"37.86487900775172", "swlng"=>"-122.293928428833"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/nearby_locations" for 127.0.0.1 at 2012-09-29 15:31:17 -0700
+Processing by AppController#nearby_locations_index as */*
+  Parameters: {"nelat"=>"37.89197799755926", "nelng"=>"-122.24234418505858", "swlat"=>"37.86487900775174", "swlng"=>"-122.29384259814452"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/nearby_locations" for 127.0.0.1 at 2012-09-29 15:31:17 -0700
+Processing by AppController#nearby_locations_index as */*
+  Parameters: {"nelat"=>"37.88923467848069", "nelng"=>"-122.25848035449218", "swlat"=>"37.87568592506781", "swlng"=>"-122.28422956103515"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-09-29 15:31:29 -0700
+Processing by AppController#locations_index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered locations/index.html.haml within layouts/application (15.6ms)
+  Rendered application/_header_user.html.haml (1.0ms)
+  Rendered application/_header.html.haml (1.9ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/nearby_locations" for 127.0.0.1 at 2012-09-29 15:31:30 -0700
+Processing by AppController#nearby_locations_index as */*
+  Parameters: {"nelat"=>"37.889133072107185", "nelng"=>"-122.23341779345702", "swlat"=>"37.86203303546808", "swlng"=>"-122.28491620654296"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-29 15:31:33 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2012-09-29 15:31:33 -0700
+Processing by AppController#dashboard as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/dashboard.html.haml within layouts/application (0.2ms)
+  Rendered application/_header_user.html.haml (8.7ms)
+  Rendered application/_header.html.haml (9.5ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2012-09-29 15:31:35 -0700
+Processing by AppController#reports_index as HTML
+  [1m[35m (0.1ms)[0m  SELECT '' AS name, 0 AS num_posts FROM users WHERE 1=2
+  [1m[36m (0.1ms)[0m  [1mSELECT '' AS name, 0 AS num_users FROM users WHERE 1=2[0m
+  [1m[35m (0.1ms)[0m  SELECT '' AS name, 0 AS num_locations FROM users WHERE 1=2
+  Rendered reports/index.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header_user.html.haml (6.2ms)
+  Rendered application/_header.html.haml (9.7ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-09-29 15:31:46 -0700
+Processing by AppController#locations_index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered locations/index.html.haml within layouts/application (12.3ms)
+  Rendered application/_header_user.html.haml (1.2ms)
+  Rendered application/_header.html.haml (2.1ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/nearby_locations" for 127.0.0.1 at 2012-09-29 15:31:46 -0700
+Processing by AppController#nearby_locations_index as */*
+  Parameters: {"nelat"=>"37.889133072107185", "nelng"=>"-122.23341779345702", "swlat"=>"37.86203303546808", "swlng"=>"-122.28491620654296"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-29 15:31:59 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2012-09-29 15:31:59 -0700
+Processing by AppController#dashboard as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/dashboard.html.haml within layouts/application (0.2ms)
+  Rendered application/_header_user.html.haml (1.5ms)
+  Rendered application/_header.html.haml (3.0ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-29 15:32:05 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2012-09-29 15:32:05 -0700
+Processing by AppController#dashboard as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/dashboard.html.haml within layouts/application (0.1ms)
+  Rendered application/_header_user.html.haml (1.3ms)
+  Rendered application/_header.html.haml (2.1ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.1ms)
+Connecting to database specified by database.yml

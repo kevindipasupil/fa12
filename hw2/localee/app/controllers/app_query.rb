@@ -28,7 +28,7 @@ class AppQuery
   #     * :longitude - the longitude
   # Output: None
   def get_following_locations(user_id)
-    @following_locations = []
+    @following_locations = User.find(user_id).locations
   end
 
   # Purpose: Show the information and all posts for a given location
@@ -54,8 +54,21 @@ class AppQuery
   #         * :longitude - the longitude
   # Output: None
   def get_posts_for_location(location_id)
-    @location = {}
+    @location = Location.find(location_id)
     @posts = []
+
+    @location.posts.each do |post|
+      p_hash = {}
+      p_hash[:author_id] = post.user.id
+      p_hash[:author] = post.user.name
+      p_hash[:text] = post.text
+      p_hash[:created_at] = post.created_at
+      p_hash[:location] = post.location
+      @posts << p_hash
+    end
+
+    @posts.sort_by{|time| -time[:created_at]}
+
   end
 
   # Purpose: Show the current user's stream of posts from all the locations the user follows
@@ -76,7 +89,22 @@ class AppQuery
   #         * :longitude - the longitude
   # Output: None
   def get_stream_for_user(user_id)
+    u = User.find(user_id)
     @posts = []
+    u.locations.each do |location|
+      location.posts.each do |post|
+        p_hash = {}
+        p_hash[:author_id] = post.user.id
+        p_hash[:author] = post.user.name
+        p_hash[:text] = post.text
+        p_hash[:created_at] = post.created_at
+        p_hash[:location] = post.location
+        @posts << p_hash
+      end
+    end
+    
+    @posts.sort_by{|time| -time[:created_at]} 
+ 
   end
 
   # Purpose: Retrieve the locations within a GPS bounding box
@@ -99,6 +127,20 @@ class AppQuery
   # Output: None
   def get_nearby_locations(nelat, nelng, swlat, swlng, user_id)
     @locations = []
+
+    Location.where(:latitude => swlat..nelat, :longitude => swlng..nelng).limit(50).each do |l|
+      l_hash = {}
+      l_hash[:id] = l.id
+      l_hash[:name] = l.name
+      l_hash[:latitude] = l.latitude
+      l_hash[:longitude] = l.longitude
+      l_hash[:follows] = User.find(user_id)
+      @locations << l_hash
+    
+    end
+    
+    @locations.sort_by{|l| l[:latitude]}
+
   end
 
   # Purpose: Create a new location
