@@ -67,7 +67,8 @@ class AppQuery
       @posts << p_hash
     end
 
-    @posts.sort_by{|time| -time[:created_at]}
+    @posts.sort_by! {|time| time[:created_at]}
+    @posts.reverse!
 
   end
 
@@ -103,7 +104,8 @@ class AppQuery
       end
     end
     
-    @posts.sort_by{|time| -time[:created_at]} 
+    @posts.sort_by! {|time| time[:created_at]} 
+    @posts.reverse!
  
   end
 
@@ -139,7 +141,7 @@ class AppQuery
     
     end
     
-    @locations.sort_by{|l| l[:latitude]}
+    @locations.sort_by! {|l| l[:latitude]}
 
   end
 
@@ -208,7 +210,7 @@ class AppQuery
   def create_post(user_id, post_hash={})
     p = Post.create(post_hash)
     User.find(user_id).posts << p
-    Location.find(post_hash[:location_id].posts << p
+    Location.find(post_hash[:location_id]).posts << p
     return true    
   end
 

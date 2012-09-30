@@ -15,7 +15,7 @@ class Location < ActiveRecord::Base
       :id => self.id,
       :name => self.name,
       :longitude => self.longitude
-      :latitude => self.latitude
+      #:latitude => self.latitude
     }
   end
 
